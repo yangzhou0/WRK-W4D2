@@ -1,0 +1,8 @@
+
+<li>
+  <p>Cat Name: <%= Cat.find_by(id: cat_rental_request.cat_id).name %> </p>
+  <p>From: <%= cat_rental_request.start_date %> to <%= cat_rental_request.end_date %> </p>
+  <p>Status: <%= cat_rental_request.status %> </p>
+  <a href="<%= cat_rental_request_url(cat_rental_request.id) %>">Show me all the rental details!</a>
+  <br><br>
+</li>
